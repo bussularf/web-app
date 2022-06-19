@@ -1,4 +1,5 @@
-<div class="container chatroom" data-controller="chatroom-subscription" data-chatroom-subscription-chatroom-id-value="<%= @chatroom.id %>">
+<div class="container chatroom" data-controller="chatroom-subscription"
+  data-chatroom-subscription-chatroom-id-value="<%= @chatroom.id %>">
   <h1>#<%= @chatroom.name %></h1>
 
   <div class="messages" data-chatroom-subscription-target="messages">
@@ -8,7 +9,7 @@
   </div>
   <%= simple_form_for [@chatroom, @message],
     remote: true,
-    html: {class: "d-flex"} do |f|
+    html: {data: {action: "ajax:success->chatroom-subscription#resetForm"}, class: "d-flex" } do |f|
   %>
     <%= f.input :content,
       label: false,
