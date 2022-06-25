@@ -1,3 +1,5 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-<h3><%=@chatrooms.count%></h3>
+<% @chatrooms.each do |c| %>
+  <%= link_to c.name, chatroom_path(c) %>
+<% end %>
+  
+

@@ -10,7 +10,7 @@ class ChatroomsController < ApplicationController
   end
 
   def create
-    @chatroom = Chatroom.create(chatroom_params)
+    @chatroom = Chatroom.new(chatroom_params)
     if @chatroom.save
       redirect_to chatroom_path(@chatroom)
     else
@@ -41,6 +41,6 @@ class ChatroomsController < ApplicationController
   end
 
   def chatroom_params
-    params.(:chatroom).permit(:name)
+    params.require(:chatroom).permit(:name)
   end
 end
