@@ -1,0 +1,13 @@
+
+.main-container {
+  width: 655px;
+  height: calc(100vh - 100px);
+  background-color: green;
+  padding: 3rem;
+}
+
+.heading {
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+}
