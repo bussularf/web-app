@@ -12,3 +12,21 @@
 @import "components/index";
 @import "pages/index";
 @import "devise";
+
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #F4F0FF;
+  font-family: 'Poppins', sans-serif;
+  color: #07293E;
+}
+
+a {
+  text-decoration: none;
+}

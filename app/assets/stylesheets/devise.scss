@@ -1,13 +1,71 @@
 
 .main-container {
-  width: 655px;
-  height: calc(100vh - 100px);
-  background-color: green;
   padding: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-image img {
+  width: 100%;
+  max-width: 700px;
 }
 
 .heading {
-  background-color: yellow;
   display: flex;
   align-items: center;
+  gap: 10%;
+  padding: 0 0 2rem 0;
 }
+
+.heading h2 {
+  font-size: 3.5rem;
+}
+.heading img {
+  width: 70px;
+  height: 70px;
+}
+
+.heading b {
+  color: #6C63FF;
+}
+
+.form-control:focus {
+  border: 1px solid #6C63FF;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.form-check-input:checked {
+  background-color: #6C63FF;
+  border-color: #07293E;
+}
+
+input.btn {
+  background-color: #6C63FF;
+  color: azure;
+  border-radius: 8px;
+  font-size: .9rem;
+}
+
+input.btn:hover {
+  color: #07293E;
+  background-color: #d9ccfa;
+}
+
+.form-check {
+  font-size: .8rem;
+  padding-top: 1rem;
+}
+
+.links {
+  display: flex;
+  font-size: .8rem;
+  justify-content: space-between;
+  color: #6C63FF;
+}
+
+.links a:hover {
+  color: #07293E;
+}
+
+
