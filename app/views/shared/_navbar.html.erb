@@ -15,7 +15,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" data-bs-toggle="dropdown"><%= current_user.email %></a>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to 'New chatroom' , new_chatroom_path %>
+              <%= link_to 'New chatroom' , new_chatroom_path, class: "dropdown-item"%>
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             </div>
           </li>
