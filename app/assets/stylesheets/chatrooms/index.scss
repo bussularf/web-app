@@ -1,25 +1,30 @@
+@import "show";
+@import "new";
+
 .container-idx{
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 8%;
-  margin-top: -30px;
-  margin: 0 4rem;
 }
 
 .container-idx a {
   color: #07293E;
   font-size: 2rem;
+  font-weight: 500;
+}
+
+.user-container {
+  display: grid;
 }
 
 .container-idx a:hover {
   opacity: 0.9;
 }
 
-.user-container {
-  display: grid;
-  width: 30%;
-  margin-top: -100px;
+.chatroom-ind {
+  display: flex;
+  gap: 5% ;
+  align-items: center;
 }
 
 .info-img{

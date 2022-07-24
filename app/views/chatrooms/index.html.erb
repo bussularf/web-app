@@ -1,10 +1,15 @@
 <div class="container-idx">
   <div class="user-container">
     <% @chatrooms.each do |c| %>
-      <%= link_to c.name, chatroom_path(c) %>
+      <div class="chatroom-ind">
+        <% if c.photo.present? %>
+          <%= cl_image_tag c.photo.key, class: "avatar-bordered"%>
+        <% end %>
+        <%= link_to c.name, chatroom_path(c) %>
+      </div>
     <% end %>
   </div>
   <div class="info-img">
-    <%= cl_image_tag("undraw_social_interaction_re_dyjh_xxlrgr", crop: :fill) %>
+    <%= image_tag("capa.svg") %>
 </div> 
 </div>

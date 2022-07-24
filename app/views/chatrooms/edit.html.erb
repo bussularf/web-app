@@ -1,0 +1,7 @@
+<div class="container-form">
+  <%= simple_form_for @chatroom do |f| %>
+    <%= f.input :name %>
+    <%= f.input :photo, as: :file %>
+    <%= f.button :submit %>
+  <% end %>
+</div>

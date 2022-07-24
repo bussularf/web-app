@@ -1,0 +1,10 @@
+footer {
+  padding: var(--section-padding) 0 1rem;
+}
+
+footer .text {
+  order: 3;
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
