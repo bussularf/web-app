@@ -1,0 +1,39 @@
+.container-idx{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8%;
+  margin-top: -30px;
+  margin: 0 4rem;
+}
+
+.container-idx a {
+  color: #07293E;
+  font-size: 2rem;
+}
+
+.container-idx a:hover {
+  opacity: 0.9;
+}
+
+.user-container {
+  display: grid;
+  width: 30%;
+  margin-top: -100px;
+}
+
+.info-img{
+  padding: 30px;
+  width: 50%;
+  background-image: linear-gradient( 
+    124deg, 
+    var(--main-color-2) 53%, 
+    var(--main-color-1) -50%);
+  border-radius: 0  0 80px 80px;
+}
+
+.info-img img {
+  width: 100%;
+  min-height: calc(50% + 100px);
+  border-radius: 0  0 80px 80px;
+}

@@ -1,14 +1,5 @@
 <% if user_signed_in? %>
-  <div class="container-main">
-    <div class="user-container">
-      <% @chatrooms.each do |c| %>
-        <%= link_to c.name, chatroom_path(c) %>
-      <% end %>
-    </div>
-    <div class="info-img">
-      <%= cl_image_tag("undraw_social_interaction_re_dyjh_xxlrgr", crop: :fill) %>
-  </div> 
-  </div>
+  <% controller.redirect_to chatrooms_path%>
 <% else %>
   <div class="container-main">
     <div class="heading">
