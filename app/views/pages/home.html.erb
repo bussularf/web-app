@@ -1,5 +1,26 @@
-<% @chatrooms.each do |c| %>
-  <%= link_to c.name, chatroom_path(c) %>
+<% if user_signed_in? %>
+  <div class="container-main">
+    <div class="user-container">
+      <% @chatrooms.each do |c| %>
+        <%= link_to c.name, chatroom_path(c) %>
+      <% end %>
+    </div>
+    <div class="info-img">
+      <%= cl_image_tag("undraw_social_interaction_re_dyjh_xxlrgr", crop: :fill) %>
+  </div> 
+  </div>
+<% else %>
+  <div class="container-main">
+    <div class="heading">
+      <h3>Contant in real time</h3>
+      <h1>To<b>Talk</b></h1>
+      <div class="sub-heading">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste adipisci magni aut sunt repellat maxime, 
+          maiores obcaecati odit culpa labore porro unde aliquid cumque deserunt officia aperiam quia nobis.</p>
+      </div>
+    </div>
+    <div class="info-modal">
+        <%= cl_image_tag("undraw_everywhere_together_re_xe5a_t4kdjc", crop: :fill) %>
+    </div>    
+  </div>
 <% end %>
-  
-

@@ -12,21 +12,30 @@
 }
 
 .heading {
-  display: flex;
+  display: grid;
   align-items: center;
-  gap: 10%;
 }
 
 .heading h2 {
   font-size: 3.5rem;
 }
-.heading img {
+
+.title-field{
+  display: inline-flex;
+  gap: 3%;
+}
+
+.title-field img {
   width: 70px;
   height: 70px;
 }
 
 .heading b {
   color: #6C63FF;
+}
+
+.form-control{
+  border-radius: 8px;
 }
 
 .form-control:focus {
@@ -67,4 +76,9 @@ input.btn:hover {
   color: #07293E;
 }
 
+.alert-info {
+  color: #07293E;
+  background-color: #c4d5f5;
+  border-color: #6C63FF;
+}
 

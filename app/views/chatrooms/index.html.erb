@@ -1,0 +1,7 @@
+<div class="main-container">
+  <% @chatrooms.each do |c| %>
+    <%= link_to c.name, chatroom_path(c) %>
+  <% end %>
+</div>
+
+  

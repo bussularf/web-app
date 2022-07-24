@@ -1,10 +1,12 @@
 <div class="main-container">
   <div class="login">
-    <div class="heading pb-3">
-      <%= cl_image_tag("Group_1_btsgyw",
-        crop: :fill) %>
-      <h2>Log<b>in</b></h2>
+    <div class="title-field">
+      <%= cl_image_tag("Group_1_btsgyw", crop: :fill) %>
+      <div class="heading pb-3">
+        <h2>Log<b>in</b></h2>
+      </div>
     </div>
+    
     <div class="form-devise">
       <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <%= f.input :email,
