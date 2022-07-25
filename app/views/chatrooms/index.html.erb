@@ -6,9 +6,6 @@
           <%= cl_image_tag c.photo.key, class: "avatar-bordered"%>
         <% end %>
         <%= link_to c.name, chatroom_path(c) %>
-        <%= link_to edit_chatroom_path(c) do %>
-          <i class="fas fa-pencil-alt mr-4"></i>
-        <% end %>
       </div>
     <% end %>
   </div>
