@@ -23,6 +23,8 @@
   --main-color-1: hsl(var(--hue-1), 100%, 60%);
   --main-color-2: hsl(var(--hue-2), 100%, 61%);
   --section-padding: 7rem;
+  --text-color: hsl(var(--hue-1), 17%, 63%);
+  --bg-color-1: hsl(var(--hue-1), 100%, 95.5%);
 }
 
 html {
@@ -40,11 +42,6 @@ a {
   text-decoration: none;
 }
 
-.message-form strong {
-  color: #6C63FF;
-  font-size: 1rem;
-}
-
-.message-form i {
-  font-size: .7rem;
+ul {
+  list-style: none;
 }

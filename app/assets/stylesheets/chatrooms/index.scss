@@ -26,19 +26,3 @@
   gap: 5% ;
   align-items: center;
 }
-
-.info-img{
-  padding: 30px;
-  width: 50%;
-  background-image: linear-gradient( 
-    124deg, 
-    var(--main-color-2) 53%, 
-    var(--main-color-1) -50%);
-  border-radius: 0  0 80px 80px;
-}
-
-.info-img img {
-  width: 100%;
-  min-height: calc(50% + 100px);
-  border-radius: 0  0 80px 80px;
-}
