@@ -22,13 +22,9 @@
   --hue-2: 147;
   --main-color-1: hsl(var(--hue-1), 100%, 60%);
   --main-color-2: hsl(var(--hue-2), 100%, 61%);
-  --section-padding: 7rem;
+  --section-padding: 5rem;
   --text-color: hsl(var(--hue-1), 17%, 63%);
   --bg-color-1: hsl(var(--hue-1), 100%, 95.5%);
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {

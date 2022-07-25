@@ -4,7 +4,7 @@
 .container-idx{
   display: flex;
   justify-content: center;
-  gap: 8%;
+  gap: 20%;
 }
 
 .container-idx a {
@@ -25,4 +25,23 @@
   display: flex;
   gap: 5% ;
   align-items: center;
+}
+
+.info-img-idx{
+  max-width: calc(80vh - 4rem);
+  margin: 2rem 0;
+  padding: 40px;
+  height: 50vh;
+  background-image: linear-gradient( 
+    124deg, 
+    var(--main-color-2), 
+    var(--main-color-1) );
+  border-radius: 80px 80px 80px 80px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.info-img-idx img {
+  width: 80%;
+  min-height: calc(60% + 100px);
+  border-radius: 80px  80px 80px 80px;
 }
