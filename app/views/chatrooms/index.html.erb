@@ -6,9 +6,6 @@
           <%= cl_image_tag c.photo.key, class: "avatar-bordered"%>
         <% end %>
         <%= link_to c.name, chatroom_path(c) %>
-        <%= link_to chatroom_path(c), method: :delete, data: { confirm: "Are you sure?"} do %>
-              <i class="fa fa-trash"></i>
-            <%end%>
       </div>
     <% end %>
   </div>
