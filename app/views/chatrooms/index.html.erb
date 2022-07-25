@@ -3,7 +3,7 @@
     <% @chatrooms.each do |c| %>
       <div class="chatroom-ind">
         <% if c.photo.present? %>
-          <%= cl_image_tag c.photo.key, class: "avatar-bordered"%>
+          <%= image_tag c.photo.key, class: "avatar-bordered"%>
         <% end %>
         <%= link_to c.name, chatroom_path(c) %>
       </div>
